@@ -73,9 +73,9 @@ This project is an AI-powered loan assistance system that provides eligibility c
 ## Team Name
 **FinFlow**
 
-##Team Members
-**Akshaya Krishna**
-**Khushi Mahesh**
-**Kunjal Patwari**
-**Samarth M**
+## Team Members
+1. **Akshaya Krishna**
+2. **Khushi Mahesh**
+3. **Kunjal Patwari**
+4. **Samarth M**
 
