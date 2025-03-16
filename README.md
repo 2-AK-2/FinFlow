@@ -39,6 +39,7 @@ Finny is a smart, AI-powered chatbot designed to provide instant loan-related as
 - **Loan Calculation Tools**: Users will be able to calculate **interest rates, EMI, and loan eligibility**.
 - **Multilingual Support**: Finny will support **multiple languages** to help a wider audience.
 
+### 6. 
 ---
 
 ## Installation Guide
@@ -53,4 +54,4 @@ Ensure you have the following installed:
 Run the following commands to **clone** and **set up** the project:
 ```bash
 git clone https://github.com/yourusername/finny-loan-assistant.git
-cd finny-loan-assistant
+
