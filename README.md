@@ -22,24 +22,30 @@ Finny is a smart, AI-powered chatbot designed to provide instant loan-related as
   - The AI generates an **accurate, context-aware response**.
   - This ensures Finny is **always up-to-date** with the latest information.
 
-### 3. **Question Tracking & Automatic Learning**
+### 3. **Speech-to-Text (STT) & Text-to-Speech (TTS) with Sarvam API**
+- Finny integrates **Sarvam AI's advanced STT and TTS APIs** to provide speech-based interaction.
+- **Sarvam AI is a leader in voice AI technology**, offering **highly accurate** speech recognition and natural-sounding text-to-speech conversion.
+- **How it works:**
+  - Users can upload voice recordings, which are transcribed into text using **Sarvam AI’s STT API**.
+  - Finny processes the text, generates a response, and converts it back to speech using **Sarvam AI’s TTS API**.
+  - This allows users to **communicate with Finny hands-free**.
+- **Why Sarvam AI?**
+  - Offers **multi-language support** for voice processing.
+  - **High accuracy and speed** in transcription and synthesis.
+  - Ensures a **seamless user experience** with natural-sounding AI-generated voice.
+
+### 4. **Question Tracking & Automatic Learning**
 - Finny keeps track of **frequently asked questions**.
 - If a question is asked **5 or more times**, it is **automatically added** to the knowledge base.
 - This helps Finny continuously **learn and improve** without manual updates.
 
-### 4. **Real-time Chat UI with Streamlit**
+### 5. **Real-time Chat UI with Streamlit**
 - Finny provides a **smooth, interactive chat experience** using **Streamlit**.
 - **How it works:**
   - The chatbot interface is built using **Streamlit chat components**.
   - Messages are displayed in **separate user and assistant chat bubbles**.
   - Users can type their questions and receive **instant responses**.
 
-### 5. **Planned Enhancements (Future Features)**
-- **Voice Support**: Users will be able to **speak** their questions instead of typing.
-- **Loan Calculation Tools**: Users will be able to calculate **interest rates, EMI, and loan eligibility**.
-- **Multilingual Support**: Finny will support **multiple languages** to help a wider audience.
-
-### 6. 
 ---
 
 ## Installation Guide
@@ -54,4 +60,4 @@ Ensure you have the following installed:
 Run the following commands to **clone** and **set up** the project:
 ```bash
 git clone https://github.com/yourusername/finny-loan-assistant.git
-
+cd finny-loan-assistant
