@@ -60,4 +60,3 @@ Ensure you have the following installed:
 Run the following commands to **clone** and **set up** the project:
 ```bash
 git clone https://github.com/yourusername/finny-loan-assistant.git
-cd finny-loan-assistant
