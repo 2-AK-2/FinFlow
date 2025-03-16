@@ -1,81 +1,56 @@
-# FinFlow
+# Finny - Your Loan Knowledge Assistant 🤖
 
 ## Overview
-This project is an AI-powered loan assistance system that provides eligibility checks, application guidance, and financial tips using NLP, intent recognition, and API integrations. It supports multilingual inputs, speech-to-text, and text-to-speech functionalities.
+
+Finny is a smart, AI-powered chatbot designed to provide instant loan-related assistance. It combines a **dynamic knowledge base** with **real-time AI-generated responses** to help users get accurate information about loans, credit scores, interest rates, and more.
+
+---
 
 ## Features
-### Loan Eligibility & Guidance
-- Determines eligibility and provides loan application insights.
 
-### Multilingual NLP
-- Processes inputs in multiple languages via mBERT and Google Translate API.
+### 1. **Dynamic Knowledge Base (FAISS-powered Retrieval System)**
+- Finny stores a **knowledge base** of predefined loan-related information using the **FAISS (Facebook AI Similarity Search) vector store**.
+- **How it works:**
+  - When a user asks a question, the system searches the **most relevant** answer from the knowledge base.
+  - If an answer is found, it is **displayed instantly**.
+  - If no answer is found, Finny **intelligently learns** the new query over time and expands its knowledge base.
 
-### Intent Recognition
-- Classifies queries using BERT and Dialogflow CX.
+### 2. **AI-Powered Chatbot (Google Gemini AI Integration)**
+- If a user asks a question **not covered** in the knowledge base, Finny will generate a response using **Google Gemini AI**.
+- **How it works:**
+  - The chatbot sends the question to **Google Gemini AI**.
+  - The AI generates an **accurate, context-aware response**.
+  - This ensures Finny is **always up-to-date** with the latest information.
 
-### Named Entity Recognition (NER)
-- Extracts key financial details like salary and credit score.
+### 3. **Question Tracking & Automatic Learning**
+- Finny keeps track of **frequently asked questions**.
+- If a question is asked **5 or more times**, it is **automatically added** to the knowledge base.
+- This helps Finny continuously **learn and improve** without manual updates.
 
-### Sentiment Analysis
-- Understands user emotions using VADER and FinBERT.
+### 4. **Real-time Chat UI with Streamlit**
+- Finny provides a **smooth, interactive chat experience** using **Streamlit**.
+- **How it works:**
+  - The chatbot interface is built using **Streamlit chat components**.
+  - Messages are displayed in **separate user and assistant chat bubbles**.
+  - Users can type their questions and receive **instant responses**.
 
-### Dynamic API Routing
-- Uses LangChain Agents to determine and call the correct APIs.
+### 5. **Planned Enhancements (Future Features)**
+- **Voice Support**: Users will be able to **speak** their questions instead of typing.
+- **Loan Calculation Tools**: Users will be able to calculate **interest rates, EMI, and loan eligibility**.
+- **Multilingual Support**: Finny will support **multiple languages** to help a wider audience.
 
-### Speech & Text Processing
-- **Whisper (STT)** for speech-to-text conversion.
-- **Google TTS / Amazon Polly** for text-to-speech.
+---
 
-## Tech Stack
-### Backend
-- **Node.js (Express.js) / Python (FastAPI):** Handles API requests and business logic.
-- **PostgreSQL / Firebase Firestore:** Stores user interactions and loan details.
+## Installation Guide
 
-### NLP Models & AI Services
-- **BERT / Dialogflow CX:** Intent classification and multilingual understanding.
-- **spaCy / FinBERT:** Named entity recognition.
-- **VADER / FinBERT:** Sentiment analysis.
-- **LangChain Agents:** API routing and function calling.
-- **LlamaIndex:** Fetches financial data from structured/unstructured sources.
-- **OpenAI GPT-4:** Response generation and conversational AI.
+### **Prerequisites**
+Ensure you have the following installed:
+- Python 3.8+
+- pip (Python package manager)
+- Streamlit
 
-### Frontend & Communication
-- **Flutter:** For building the mobile/web application.
-- **Google Cloud Translation API:** For multilingual support.
-- **WhatsApp API:** Allows user interaction via chat.
-
-## Workflow
-1. **User Input:** Voice (**Whisper STT**) or text (**Flutter app, WhatsApp API**).
-2. **Processing:**
-   - If required, translates text via **Google Cloud Translate API**.
-   - **BERT/Dialogflow CX** classifies intent.
-   - **Named entity recognition** extracts key details.
-3. **API Calls & Decision Making:**
-   - **LangChain** determines the appropriate API.
-   - Calls **Loan Eligibility API** if necessary.
-4. **Response Generation:**
-   - **GPT-4** formulates a response.
-   - **Sentiment analysis (VADER/FinBERT)** refines the output.
-   - **Google TTS / Amazon Polly** provides voice responses if needed.
-5. **Delivery:** The response is sent back via text or speech.
-
-## Why Choose This Solution?
-- **AI-Driven & Scalable:** Uses cutting-edge NLP and ML models.
-- **Multilingual Support:** Enables interaction in 50+ languages.
-- **Seamless API Integration:** Efficient loan guidance and financial advice.
-- **User-Friendly:** Supports text, voice, and multiple platforms.
-
-## Future Enhancements
-- **Integration with Banking APIs** for real-time loan offers.
-- **Enhanced Personalization** using user history and preferences.
-- **Blockchain-based Security** for financial data privacy.
-
-## Team Name
-**FinFlow**
-
-## Team Members
-1. **Akshaya Krishna**
-2. **Khushi Mahesh**
-3. **Kunjal Patwari**
-4. **Samarth M**
-
+### **Cloning the Repository**
+Run the following commands to **clone** and **set up** the project:
+```bash
+git clone https://github.com/yourusername/finny-loan-assistant.git
+cd finny-loan-assistant
